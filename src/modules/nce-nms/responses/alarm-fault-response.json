@@ -1,0 +1,40 @@
+{
+  "data": {
+    "category": "fault",
+    "time-created": "2023-12-21T08:54:58.000Z",
+    "x733-alarm-parameters": {
+      "event-type": "communications-alarm"
+    },
+    "alarm-state-change-parameters": {
+      "perceived-severity": "critical",
+      "time": "2023-12-21T08:54:58.000Z"
+    },
+    "alarm-parameters": {
+      "ne-name": "Jeff Heights_9020_OSN9800_UPS",
+      "location-info": "1-Electrical (2-B)-13-13DCP-2(RI12/TO12 Shelf3-6-LTX-RX3/TX3)-OTS:1",
+      "native-probable-cause": "R_LOS",
+      "probable-cause": "(1)The fiber jumper is not connected at the optical interface of the board;\n(2)The laser of the board on the opposite station is shutdown;\n(3)A fiber break occurs in the transmission line;\n(4) The attenuation of the transmission line is overlarge;\n(5)The transmit part of the opposite station is faulty;\n(6)The receive unit at the local station is faulty.",
+      "root-cause-identifier": false,
+      "ems-time": "2023-06-19T06:54:06.534Z",
+      "alarm-serial-number": "30704139",
+      "reason-id": 1,
+      "tenant-id": "default-organization-id",
+      "tenant": "DefaultOrganization",
+      "alarm-text": "Loss of signal",
+      "other-info": ""
+    },
+    "common-alarm-parameters": {
+      "alt-resource": [],
+      "resource": "b8676deb-1c50-11ec-8ed2-5413108dda41",
+      "resource-url": "/restconf/v2/data/huawei-nce-resource-inventory:ltps/ltp/b8676deb-1c50-11ec-8ed2-5413108dda41",
+      "related-alarm": [],
+      "alarm-type-qualifier": "268374017-1",
+      "impacted-resource": [],
+      "root-cause-resource": [],
+      "alarm-type-id": "communications-alarm",
+      "layer": "LR_Optical_Transmission_Section",
+      "md-name": "Huawei/NCE",
+      "product-type": "OptiX OSN 9800"
+    }
+  }
+}

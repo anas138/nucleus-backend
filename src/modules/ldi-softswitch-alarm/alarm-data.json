@@ -1,0 +1,16 @@
+{
+  "ems_alarm_id": "18173312",
+  "category": "fault",
+  "event_time": "2024-12-10 18:55:14",
+  "source_ip": "192.168.192.11",
+  "severity": "Major Error",
+  "class_txt": "Major Error",
+  "syslog_ip": "192.168.192.11",
+  "syslog_source": "c4-ems1",
+  "error_code": "0x0C08",
+  "message": "SIP IC Link 31 (TG:Zong_INT): State:AVL - TG_CC_OUT(LP)",
+  "message_state": "AVL - ALIVE(LP)",
+  "trunk_group": "Zong_INT",
+  "type_txt": "SIP",
+  "subtype_txt": "SIP IC Link State"
+}

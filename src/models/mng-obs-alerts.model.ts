@@ -1,0 +1,36 @@
+export class CreateMngObsAlertsModel {
+  alert_state?: string;
+  alert_status?: string;
+  alert_severity?: string;
+  alert_timestamp?: Date;
+  alert_id?: string;
+  alert_message?: string;
+  conditions?: string;
+  metrics?: string;
+  duration?: string;
+  entity_name?: string;
+  entity_id?: string;
+  entity_type?: string;
+  entity_description?: string;
+  device_hostname?: string;
+  device_sysname?: string;
+  device_description?: string;
+  device_id?: string;
+  device_hardware?: string;
+  device_os?: string;
+  device_type?: string;
+  device_location?: string;
+  device_uptime?: string;
+  device_rebooted?: Date;
+  title?: string;
+  alert_emoji?: string;
+  alert_emoji_name?: string;
+  alert_color?: string;
+  alert_url?: string;
+  alert_timestamp_rfc2822?: Date;
+  alert_timestamp_rfc3339?: Date;
+  entity_url?: string;
+  entity_link?: string;
+  device_url?: string;
+  device_link?: string;
+}

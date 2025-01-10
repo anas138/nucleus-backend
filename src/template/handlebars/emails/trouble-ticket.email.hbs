@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trouble Ticket</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
+
+ <div>
+
+    <div style="max-width: 600px; margin: 20px auto; padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);">
+      <!-- Section 1: Notification Message -->
+
+      <div style="margin-bottom: 20px;">
+       {{!-- <tr>
+                                <td style="padding-bottom: 22px;" align="left">
+                                    <img src="{{logo}}" width="170" height="60" alt="Logo">
+                                </td>
+                            </tr> --}}
+        <p> Dear {{toUser}},</p> 
+        <p>{{title}}</p>
+      </div>
+       
+        {{>troubleTicketDetail}}
+        {{>AlarmDetail}}
+        {{>Footer}}
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

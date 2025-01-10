@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nucleus-image
+    ports:
+      - "4001:3000"
+    environment:
+      DATABASE_HOST: host.docker.internal
+      DATABASE_PORT: 3306
+      DATABASE_USER: root
+      DATABASE_PASSWORD: root
+      DATABASE_NAME: nucleus_db
+      REDIS_HOST: 172.0.0.1
+      REDIS_PORT: 6379
+  
+   

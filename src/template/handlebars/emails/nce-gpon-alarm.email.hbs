@@ -1,0 +1,110 @@
+<html></html>
+   <body>
+      <div data-role="module-unsubscribe" class="module" role="module" data-type="unsubscribe"
+         style="color:#444444; font-size:12px; line-height:10px;text-align:center;" data-muid="4e838cf3-9892-4a6d-94d6-170e474d21e5">
+         <div style="margin:0px;font-family:Arial,Helvetica,sans-serif!important;font-size:14px!important;color:#333333!important">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+               <tr>
+                  <td align="center" style="padding:10px">
+                     <table style="font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#333" width="700" border="0" align="center" cellpadding="0"
+                        cellspacing="0">
+            <tbody>
+               <tr>
+                  <td style="padding:6px 0 12px 0" align="center">
+                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                           <tr>
+                              <td style="padding-bottom: 22px;" align="left">
+                                 <img src="{{logo}}" width="170" height="60" alt="" class="CToWUd">
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="padding:12px 12px 12px 12px; background-color:white; border-top:solid 4px #ea981d; border-left: solid 1px lightgrey; border-right: solid 1px lightgrey; border-radius: 8px; border-bottom: solid 1px lightgrey;" align="center">
+                                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                       <tr>
+                                          <td bgcolor="#ffffff">
+                                             <table width="700" border="0" align="center" cellpadding="0" cellspacing="0" style="background-color:white;">
+                                                <tbody>
+                                                   <tr>
+                                                      <td align="left" style="padding-top:10px;padding-bottom:30px;padding-left:30px;padding-right:30px;">
+                                                         <div style="text-align:left; margin-top: 40px;">
+                                                            
+                                                            <!--CONTENT STARTS HERE-->
+                                                            <p style="line-height:1.35; font-size: 18px;">
+                                                               Dear GPON Team,
+                                                            </p>
+                                                            <p style="line-height:1.35; font-size: 14px;">
+                                                              This is a alarm notification occured for <strong>{{data.ne_name}}</strong>, below are details :
+                                                            </p>
+                                                            <hr style="color: #f7f7f7" />
+                                                            <h4>Alarm Details</h4>
+                                                            <table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-color: lightgrey; border-collapse: collapse; font-size: 14px; text-align:center;">
+                                                               <tr>
+                                                                  <th style="background-color: lightgrey;  text-align: right;">Severity</th>
+                                                                  <td style="text-align: left;">{{data.severity}}</td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <th style="background-color: lightgrey;  text-align: right;">Status</th>
+                                                                  <td style="text-align: left;">{{data.is_cleared}}</td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <th style="background-color: lightgrey;  text-align: right;">NE Name</th>
+                                                                  <td style="text-align: left;">{{data.ne_name}}</td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <th style="background-color: lightgrey;  text-align: right;">Alarm Name</th>
+                                                                  <td style="text-align: left;">{{data.native_probable_cause}}</td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <th style="background-color: lightgrey;  text-align: right;">Alarm Description</th>
+                                                                  <td style="text-align: left;">{{data.alarm_text}}</td>
+                                                               </tr>
+                                    
+                                                    
+                                                               <tr>
+                                                                  <th style="background-color: lightgrey;  text-align: right;">Location Info</th>
+                                                                  <td style="text-align: left;">{{data.location_info}}</td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <th style="background-color: lightgrey;  text-align: right;">Region</th>
+                                                                  <td style="text-align: left;">{{data.nceGponNetworkElement.region.name}}</td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <th style="background-color: lightgrey;  text-align: right;">Parent Subnet Name</th>
+                                                                  <td style="text-align: left;">{{data.network_element.parent_subnet.name}}</td>
+                                                               </tr>
+                                                               <tr>
+                                                                  <th style="background-color: lightgrey;  text-align: right;">Occurred On</th>
+                                                                  <td style="text-align: left;">{{data.created_on}}</td>
+                                                               </tr>
+                                                            </table>
+                                                            <div style="margin-top:60px; text-align:center; border-bottom: solid 1px #d7d7d7; padding-bottom: 30px;">
+                                                               <a href="{{url}}" target="_blank"
+                                                                  style="background-color: #ff6600; border-radius: 22px; text-decoration: none; color: white; font-size: 14px; text-transform: uppercase; font-weight: 500; padding-left: 22px; padding-top: 11px; padding-right: 22px; padding-bottom: 11px; letter-spacing:2;">
+                                                               View Details
+                                                               </a>
+                                                            </div>
+                                                            <p style="text-align: start">
+                                                            {{{signature}}}
+                                                            </p>
+                                                         </div>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+         </div>
+      </div>
+   </body>
+</html>

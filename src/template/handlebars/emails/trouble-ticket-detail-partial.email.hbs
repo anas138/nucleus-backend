@@ -1,0 +1,34 @@
+<div style="margin-bottom:10px">
+    <p style="font-size: 14px; font-weight: bold; margin-bottom: 10px; color: #f58120;">Ticket Details</p>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">
+        <tr>
+            <th style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px; width:200px">Reference No</th>
+            <td style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;">{{ data.ticket_number }}</td>
+        </tr>
+        <tr>
+            <th style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px; width:200px">Status</th>
+            <td style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;">{{ data.currentStatus.label }}</td>
+        </tr>
+        <tr>
+            <th style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px; width:200px">Case Title</th>
+            <td style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;">{{ data.case_title }}</td>
+        </tr>
+        <tr>
+            <th style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px; width:200px">Category</th>
+            <td style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;">{{ data.troubleTicketCategory.name }}</td>
+        </tr>
+        <tr>
+            <th style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px; width:200px">Subcategory</th>
+            <td style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;">{{ data.troubleTicketSubCategory.name }}</td>
+        </tr>
+         <tr>
+            <th style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px; width:200px">Priority</th>
+            <td style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;">{{ data.priorityLevel.label }}</td>
+        </tr>
+    </table>
+    <div style="height: auto; text-align: center; margin:20px">
+           <a href="{{url}}" target="_blank" style="background-color: #ff6600; border-radius: 22px; text-decoration: none; color: white; font-size: 14px; text-transform: uppercase; padding: 10px; display: inline-block;">
+               View Ticket
+            </a>
+    </div>
+</div>

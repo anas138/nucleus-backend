@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .card {
+            border: 1px solid #E8E8E8;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .alert-bar {
+            background-color: #f60;
+            /* Light orange shade */
+            color: black;
+            font-weight: bold;
+            padding: 10px;
+            padding-left: 40px;
+        }
+
+        .card-content {
+            font-size: 12px;
+            font-family: sans-serif;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .card-content table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .card-content th,
+        .card-content td {
+            border: 1px solid #E8E8E8;
+            /* Add border properties */
+            padding: 5px;
+            text-align: left;
+        }
+
+        .card-content td a {
+            text-decoration: underline;
+            color: #0B0BFF;
+            font-weight: bold;
+        }
+
+        .card-content td.label {
+            font-weight: bold;
+            padding-right: 15px;
+        }
+
+        .card-content td.danger {
+            color: #D11818;
+            font-weight: bold;
+        }
+
+        .card-content tr:nth-child(even) {
+            background-color: #F4F4F4;
+            /* Shaded background for even rows */
+        }
+    </style>
+</head>
+
+<body>
+    {{>header}}
+    <div class="card">
+        <div class="alert-bar">ALARM NOTIFICATION</div>
+        <div class="card-content">
+            <table>
+                <tbody>
+                    {{#each data}}
+                    <tr>
+                        <td class="label">{{this.label}}</td>
+                        <td>{{this.value}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {{>footer}}
+</body>

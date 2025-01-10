@@ -1,0 +1,43 @@
+{
+  "data": {
+    "category": "clear",
+    "time-created": "2023-06-19T06:52:35.000Z",
+    "x733-alarm-parameters": {
+      "event-type": "communications-alarm"
+    },
+    "alarm-state-change-parameters": {
+      "perceived-severity": "minor",
+      "alarm-text": "Alarm cleared.",
+      "time": "2023-06-19T06:53:53.000Z"
+    },
+    "alarm-parameters": {
+      "ne-name": "Jeff Heights_9020_OSN9800_UPS",
+      "location-info": "1-Electrical (2-B)-12-13DCP-1(RI11/TO11 Shelf1-11-LTX-RX1/TX1)-CLIENT:1",
+      "native-probable-cause": "CLIENT_PORT_STA_INDI",
+      "probable-cause": "1. The working/protection channel of the protection group is in SF/SD state.\n2. The protection group enters the external switching state.",
+      "root-cause-identifier": false,
+      "ems-time": "2023-06-19T06:53:55.000Z",
+      "alarm-serial-number": "30703955",
+      "reason-id": 13139,
+      "tenant-id": "default-organization-id",
+      "tenant": "DefaultOrganization",
+      "alarm-text": "Client-side 1+1 optical channel protection status indication",
+      "other-info": "\nSwitching Request:SF Switch;\nAlarm Parameter II(hex) 0x0c 0xff 0xe7 0xfe 0x4b"
+    },
+    "common-alarm-parameters": {
+      "alt-resource": [],
+      "resource": "b419bde0-1c50-11ec-8ed2-5413108dda41",
+      "resource-url": "/restconf/v2/data/huawei-nce-resource-inventory:ltps/ltp/b419bde0-1c50-11ec-8ed2-5413108dda41",
+      "related-alarm": [],
+      "alarm-type-qualifier": "268374017-13139",
+      "impacted-resource": [
+        "TrailName=Jeff Heights_9020_OSN9800_UPS-KHI_CLS_9070_OSN 9800_UPS-Client-7590"
+      ],
+      "root-cause-resource": [],
+      "alarm-type-id": "communications-alarm",
+      "layer": "LR_DIGITAL_SIGNAL_RATE",
+      "md-name": "Huawei/NCE",
+      "product-type": "OptiX OSN 9800"
+    }
+  }
+}

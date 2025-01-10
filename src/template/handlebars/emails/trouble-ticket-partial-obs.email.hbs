@@ -1,0 +1,29 @@
+<div style="border-top: solid 1px #d7d7d7;">
+    <p style="font-size: 14px; font-weight: bold; margin-bottom: 8px; color: #f58120;">Alarm Detail</p>
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 8px;">
+        <tr>
+            <th style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;  width:200px">Alarm Name</th>
+            <td style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;">{{ data.alarm_detail.device_hostname }}</td>
+        </tr>
+        <tr>
+            <th style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;  width:200px">Title</th>
+            <td style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;">{{ data.alarm_detail.title }}</td>
+        </tr>
+        <tr>
+            <th style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;  width:200px">Metrics</th>
+            <td style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;">{{ data.alarm_detail.metrics }}</td>
+        </tr>
+        <tr>
+            <th style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;  width:200px">Cleared on</th>
+            <td style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;">{{ data.alarm_detail.cleared_on }}</td>
+        </tr>
+        <tr>
+            <th style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;  width:200px">Message</th>
+            <td style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;">{{ data.alarm_detail.alert_message }}</td>
+        </tr>
+        <tr>
+            <th style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;  width:200px">Occurred On</th>
+            <td style="padding: 5px; text-align: left; border-bottom: 1px solid #dddddd; font-size: 12px;">{{ data.alarm_detail.created_at }}</td>
+        </tr>
+    </table>
+</div>
